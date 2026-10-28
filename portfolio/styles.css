@@ -1,0 +1,131 @@
+
+/* Reset default browser spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page background and layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d5e8fa;
+    min-height: 100vh;
+    color: #303030;
+}
+
+/* Main card */
+.container {
+    width: min(460px, calc(100% - 32px));
+    min-height: 225px;
+    margin: 160px auto 0;
+    padding: 55px 35px 40px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Welcome / greeting heading */
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 25px;
+    overflow-wrap: anywhere;
+}
+
+/* Input and button row */
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Name input */
+input {
+    flex: 1;
+    min-width: 0;
+    height: 39px;
+    padding: 0 11px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #5998ed;
+    box-shadow: 0 0 0 2px rgba(89, 152, 237, 0.15);
+}
+
+/* Greet button */
+button {
+    height: 39px;
+    padding: 0 17px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5798ed;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #367fdb;
+}
+
+/* Button click */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Names list */
+ul {
+    list-style: none;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* Individual name */
+li {
+    background-color: #e6f2fd;
+    padding: 9px 12px;
+    margin-bottom: 7px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    overflow-wrap: anywhere;
+}
+
+/* Name hover */
+li:hover {
+    background-color: #cfe5fa;
+}
+
+/* Responsive layout for phones */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 60px;
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .input-area {
+        gap: 8px;
+    }
+
+    button {
+        padding: 0 12px;
+    }
+}
